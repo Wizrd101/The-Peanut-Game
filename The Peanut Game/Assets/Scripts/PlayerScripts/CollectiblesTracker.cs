@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollectiblesTracker : MonoBehaviour
 {
-    int collectibles;
+    public int collectibles;
 
     void OnTriggerEnter (Collider other)
     {
