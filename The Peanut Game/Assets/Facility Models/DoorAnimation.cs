@@ -15,14 +15,16 @@ public class DoorAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            m_Animator.SetTrigger("Open");
-        }
 
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            m_Animator.SetTrigger("Close");
-        }
+    }
+
+    public void Open()
+    {
+        m_Animator.SetTrigger("Open");
+    }
+
+    public void close()
+    {
+        m_Animator.SetTrigger("Close");
     }
 }
