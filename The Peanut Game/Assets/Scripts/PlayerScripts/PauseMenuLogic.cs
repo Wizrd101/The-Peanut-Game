@@ -61,5 +61,4 @@ public class PauseMenuLogic : MonoBehaviour
     {
         Application.Quit();
     }
-
 }
