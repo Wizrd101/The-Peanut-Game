@@ -54,7 +54,7 @@ public class PauseMenuLogic : MonoBehaviour
     public void LoadMainMenu()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("StartScreen");
     }
 
     public void ExitGame()
