@@ -32,12 +32,16 @@ public class PauseMenuLogic : MonoBehaviour
     {
         Time.timeScale = 0;
         cv.enabled = true;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void Resume()
     {
         Time.timeScale = 1;
         cv.enabled = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void Restart()
