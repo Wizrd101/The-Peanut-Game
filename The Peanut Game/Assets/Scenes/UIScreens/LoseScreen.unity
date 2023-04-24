@@ -452,7 +452,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: xxx
+  m_text: As Dr. Raven looks to the sky, he can hear The Subjects running away. He
+    knows what comes next. Eventually, everyone at the facility face this fate. It
+    is less than likely that Dr. Raven will survive though. His thoughts trail off
+    and all fades to black.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

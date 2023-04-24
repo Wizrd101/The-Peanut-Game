@@ -940,7 +940,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Include something about Collectibles here...
+  m_text: Dr. Raven made it out alive, but there were items he could've grabbed.
+    5 items in total that were important to him. Look for these items next time.
+    They're hiding in plain sight.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
