@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class CollectiblesTracker : MonoBehaviour
 {
-    public int collectibles;
+    public int tempCollectibles;
 
-    /*void Start ()
+    void Start ()
     {
-        PlayerPrefs.SetInt(CollectiblesTracker, 0);
-    }*/
+        tempCollectibles = 0;
+        PlayerPrefs.SetInt("Collectibles", 0);
+    }
 
     void OnTriggerEnter (Collider other)
     {
         if (other.tag == "Collectible")
         {
-            collectibles++;
-            Debug.Log(collectibles);
+            tempCollectibles++;
+            PlayerPrefs.SetInt("Collectibles", tempCollectibles);
+            Debug.Log(PlayerPrefs.GetInt("Collectibles"));
             Destroy(other.gameObject);
         }
     }
