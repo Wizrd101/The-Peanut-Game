@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 // Followed a video tutorial: https://www.youtube.com/watch?v=c8Nq19gkNfs
 
-/*public class EnemyMovement : MonoBehaviour
+public class EnemyMovement : MonoBehaviour
 {
     // Declaring the variables
     public NavMeshAgent agent;
@@ -25,7 +25,7 @@ using UnityEngine.AI;
     void Update()
     {
         // If we are close enough to the waypoint, change to the next waypoint
-        if (Vector3.Distance = (target.position, target) < 1)
+        if (Vector3.Distance(transform.position, target) < 1)
         {
             IterateWaypointIndex();
             UpdateDestination();
@@ -53,4 +53,3 @@ using UnityEngine.AI;
         agent.SetDestination(target);
     }
 }
-*/
