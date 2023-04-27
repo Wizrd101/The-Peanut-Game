@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 // Followed a video tutorial: https://www.youtube.com/watch?v=c8Nq19gkNfs
+// The video was a part of it, the chasing part was mine
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -14,19 +15,42 @@ public class EnemyMovement : MonoBehaviour
     int waypointIndex;
     Vector3 target;
 
-    //public float triggerDist = 1;
+    //bool isChasing;
+    float patrolSpeed = 30;
+    //float chaseSpeed = 50;
+
+    public Transform player;
+    public float triggerDist = 30;
+    Vector3 playerVector;
+    Vector3 moveDir;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         UpdateDestination();
+        agent.speed = patrolSpeed;
     }
 
     void Update()
     {
-        // If we are close enough to the waypoint, change to the next waypoint
-        if (Vector3.Distance(transform.position, target) < 1)
+        playerVector = player.position;
+        float playerVectorPosition = playerVector.magnitude;
+        moveDir = new Vector3(playerVector.x - agent.transform.position.x, playerVector.y - agent.transform.position.y, playerVector.z - agent.transform.position.z);
+        float distToPlayer = moveDir.magnitude;
+        if (distToPlayer <= triggerDist)
         {
+            agent.SetDestination(playerVector);
+            Debug.Log("Chasing Player");
+        }
+        else
+        {
+            agent.SetDestination(target);
+            Debug.Log("Patroling");
+        }
+        // If we are close enough to the waypoint, change to the next waypoint
+        if (Vector3.Distance(transform.position, target) <= 1)
+        {
+            Debug.Log("Going to next waypoint");
             IterateWaypointIndex();
             UpdateDestination();
         }
@@ -50,6 +74,5 @@ public class EnemyMovement : MonoBehaviour
     void UpdateDestination()
     {
         target = waypoints[waypointIndex].position;
-        agent.SetDestination(target);
     }
 }
