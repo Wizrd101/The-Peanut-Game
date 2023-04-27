@@ -33,7 +33,7 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         float playerPosition = player.magnitude;
-        moveDir = (player.x - agent.transform.position.x, player.y - agent.transform.position.y, player.z - agent.transform.position.z);
+        moveDir = new Vector3(player.x - agent.transform.position.x, player.y - agent.transform.position.y, player.z - agent.transform.position.z);
         float distToPlayer = moveDir.magnitude;
         // float distToPlayer = (player.transform.position - agent.transform.position).magnitude;
         if (distToPlayer <= triggerDist)
