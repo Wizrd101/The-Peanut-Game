@@ -16142,6 +16142,11 @@ Transform:
   m_Father: {fileID: 1029394909}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &967194936 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 2136772144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &977268238
 Mesh:
   m_ObjectHideFlags: 0
@@ -16609,6 +16614,8 @@ MonoBehaviour:
   - {fileID: 599727524}
   - {fileID: 820703418}
   - {fileID: 1409262891}
+  playerObject: {fileID: 967194936}
+  triggerDist: 5000
 --- !u!195 &1002497197
 NavMeshAgent:
   m_ObjectHideFlags: 0

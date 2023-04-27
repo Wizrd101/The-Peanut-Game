@@ -19,8 +19,9 @@ public class EnemyMovement : MonoBehaviour
     float patrolSpeed = 30;
     //float chaseSpeed = 50;
 
-    public Vector3 player;
-    public float triggerDist = 5000;
+    public Transform player;
+    public float triggerDist = 30;
+    Vector3 playerVector;
     Vector3 moveDir;
 
     void Start()
@@ -32,14 +33,19 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        float playerPosition = player.magnitude;
-        moveDir = new Vector3(player.x - agent.transform.position.x, player.y - agent.transform.position.y, player.z - agent.transform.position.z);
+        playerVector = player.position;
+        float playerVectorPosition = playerVector.magnitude;
+        moveDir = new Vector3(playerVector.x - agent.transform.position.x, playerVector.y - agent.transform.position.y, playerVector.z - agent.transform.position.z);
         float distToPlayer = moveDir.magnitude;
-        // float distToPlayer = (player.transform.position - agent.transform.position).magnitude;
         if (distToPlayer <= triggerDist)
         {
-            agent.SetDestination(player);
+            agent.SetDestination(playerVector);
             Debug.Log("Chasing Player");
+        }
+        else
+        {
+            agent.SetDestination(target);
+            Debug.Log("Patroling");
         }
         // If we are close enough to the waypoint, change to the next waypoint
         if (Vector3.Distance(transform.position, target) <= 1)
@@ -68,6 +74,5 @@ public class EnemyMovement : MonoBehaviour
     void UpdateDestination()
     {
         target = waypoints[waypointIndex].position;
-        agent.SetDestination(target);
     }
 }
