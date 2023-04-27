@@ -19,7 +19,7 @@ public class EnemyAI : MonoBehaviour
     // Chase variables
     //bool isChasing;
     float patrolSpeed = 30;
-    float chaseSpeed = 50;
+    //float chaseSpeed = 50;
 
     // Player Variables
     public Transform player;
@@ -61,7 +61,6 @@ public class EnemyAI : MonoBehaviour
         // If we are close enough to the waypoint, change to the next waypoint
             // OPTION: I could nest this If statement into the else statement above, which would not update
             // the waypoints when the enemy is chasing the player. I'm not sure; more testing required.
-            // If I do, nest it above all code currently in the statement. (from the agent.SetDestination up)
         if (Vector3.Distance(transform.position, target) <= 1)
         {
             Debug.Log("Going to next waypoint");
