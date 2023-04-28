@@ -19,7 +19,7 @@ public class EnemyAI : MonoBehaviour
     // Chase variables
     //bool isChasing;
     float patrolSpeed = 30;
-    //float chaseSpeed = 50;
+    float chaseSpeed = 50;
 
     // Player Variables
     public Transform player;
@@ -59,8 +59,9 @@ public class EnemyAI : MonoBehaviour
             Debug.Log("Patroling");
         }
         // If we are close enough to the waypoint, change to the next waypoint
-            // OPTION: I could nest this If statement into the else statement above, which would not update
-            // the waypoints when the enemy is chasing the player. I'm not sure; more testing required.
+        // OPTION: I could nest this If statement into the else statement above, which would not update
+        // the waypoints when the enemy is chasing the player. I'm not sure; more testing required.
+        // If I do, nest it above all code currently in the statement. (from the agent.SetDestination up)
         if (Vector3.Distance(transform.position, target) <= 1)
         {
             Debug.Log("Going to next waypoint");
@@ -80,8 +81,8 @@ public class EnemyAI : MonoBehaviour
         }
 
         // OPTION: Make the system select a random waypoint everytime IterateWaypointIndex is called
-            // SUB-OPTION: Make the system only select a random waypoint within a certain distance of the
-            // player, to keep the enemy close to the player
+        // SUB-OPTION: Make the system only select a random waypoint within a certain distance of the
+        // player, to keep the enemy close to the player
     }
 
     // Updates where the NavMeshAgent is tracking
