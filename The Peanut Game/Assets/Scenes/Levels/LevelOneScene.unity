@@ -16614,8 +16614,8 @@ MonoBehaviour:
   - {fileID: 599727524}
   - {fileID: 820703418}
   - {fileID: 1409262891}
-  playerObject: {fileID: 967194936}
-  triggerDist: 5000
+  player: {fileID: 967194936}
+  triggerDist: 500
 --- !u!195 &1002497197
 NavMeshAgent:
   m_ObjectHideFlags: 0
