@@ -36,19 +36,29 @@ public class CollectiblesTracker : MonoBehaviour
     // New system (with Raycasts)
     void Update ()
     {
+        // Basic Raycasting stuff.
         RaycastHit hit;
-        Ray CDRay = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
+        Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
+
+        // If the Raycast is interacting with something, continue
+        // Also make hitTemp down here, it didn't like it with the other stuff for some reason
         if (Physics.Raycast(ray, out hit, collectibleRaycastDistance))
         {
-            if (hit.collider.gameObject.tag == "Collectible")
+            // If the hit object is tagged "Collectible", then enable the canvas...
+            GameObject hitTemp = hit.collider.gameObject;
+            if (hitTemp.tag == "Collectible")
             {
                 colCanvas.enabled = true;
+                // If you press the "E" key while looking at the collectible, pick it up
+                // Also add 1 to the collectibles and destroy the collectible
                 if (Input.GetButtonDown("E"))
                 {
                     tempCollectibles++;
-                    hit.collider.gameObject.Destroy();
+                    PlayerPrefs.SetInt("Collectibles", tempCollectibles);
+                    Destroy(hitTemp.gameObject);
                 }
             }
+            // ...Otherwise, it's a random object, disable the canvas (or keep it disabled)
             else
             {
                 colCanvas.enabled = false;
