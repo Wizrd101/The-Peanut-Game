@@ -156,6 +156,7 @@ GameObject:
   - component: {fileID: 8616685848737228376}
   - component: {fileID: 1198864083242611237}
   - component: {fileID: 2842872825372590623}
+  - component: {fileID: 4320478819534100575}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -498,7 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1655a419ef1ba14fa7888b8247d2479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectibles: 0
+  tempCollectibles: 0
 --- !u!114 &2842872825372590623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,3 +512,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc54e64f1c0ec6469bba704004ed999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4320478819534100575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1800f6c71de27314daecbc7e501b4c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  enemy: {fileID: 0}
