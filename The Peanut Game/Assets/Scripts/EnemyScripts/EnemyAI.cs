@@ -17,13 +17,12 @@ public class EnemyAI : MonoBehaviour
     Vector3 target;
 
     // Chase variables
-    //bool isChasing;
-    float patrolSpeed = 30;
-    float chaseSpeed = 50;
+    [SerializeField] float patrolSpeed = 200;
+    [SerializeField] float chaseSpeed = 300;
 
     // Player Variables
     public Transform player;
-    public float triggerDist = 30;
+    public float triggerDist = 500;
     Vector3 playerVector;
     Vector3 moveDir;
 
@@ -46,16 +45,14 @@ public class EnemyAI : MonoBehaviour
         if (distToPlayer <= triggerDist)
         {
             agent.SetDestination(playerVector);
-            //isChasing = true;
-            //agent.speed = chaseSpeed;
+            agent.speed = chaseSpeed;
             Debug.Log("Chasing Player");
         }
         // ...Or if they aren't, go to the next waypoint
         else
         {
             agent.SetDestination(target);
-            //isChasing = false;
-            //agent.speed = patrolSpeed;
+            agent.speed = patrolSpeed;
             Debug.Log("Patroling");
         }
         // If we are close enough to the waypoint, change to the next waypoint
@@ -77,7 +74,13 @@ public class EnemyAI : MonoBehaviour
         waypointIndex++;
         if (waypointIndex == waypoints.Length)
         {
-            waypointIndex = 0;
+            /* This part is commented out because it doesn't fit the theme, but I might want it when I save the script.
+            Instead, we're going to have the monster gain an extremely aware sense after finishing 21 waypoints, 
+            Gaining exact knowledge of where the player is (and being permenantly set to chase mode)
+            This will help put the pressure on players that juked him out or are dawdling and trying to get all the collectibles. Heh heh heh...*/
+            
+            //waypointIndex = 0;
+            triggerDist = 99999999;
         }
 
         // OPTION: Make the system select a random waypoint everytime IterateWaypointIndex is called
