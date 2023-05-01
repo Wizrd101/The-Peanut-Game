@@ -8,7 +8,7 @@ public class CollectiblesTracker : MonoBehaviour
     public int tempCollectibles;
 
     // Distance that the player can interact with collectibles
-    public float collectibleRaycastDistance = 30;
+    public float colRange = 30;
 
     // Canvas that shows when the player is looking at a collectible
     // Basically tells the player "Hey, you can pick this up!"
@@ -42,7 +42,7 @@ public class CollectiblesTracker : MonoBehaviour
 
         // If the Raycast is interacting with something, continue
         // Also make hitTemp down here, it didn't like it with the other stuff for some reason
-        if (Physics.Raycast(ray, out hit, collectibleRaycastDistance))
+        if (Physics.Raycast(ray, out hit, colRange))
         {
             // If the hit object is tagged "Collectible", then enable the canvas...
             GameObject hitTemp = hit.collider.gameObject;
@@ -51,9 +51,10 @@ public class CollectiblesTracker : MonoBehaviour
                 colCanvas.enabled = true;
                 // If you press the "E" key while looking at the collectible, pick it up
                 // Also add 1 to the collectibles and destroy the collectible
-                if (Input.GetButtonDown("E"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     tempCollectibles++;
+                    Debug.Log(tempCollectibles);
                     PlayerPrefs.SetInt("Collectibles", tempCollectibles);
                     Destroy(hitTemp.gameObject);
                 }
