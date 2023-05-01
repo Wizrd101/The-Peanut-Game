@@ -21,10 +21,12 @@ public class DoorAnimation : MonoBehaviour
     public void Open()
     {
         m_Animator.SetTrigger("Open");
+        GetComponent<BoxCollider>().isTrigger = true;
     }
 
     public void Close()
     {
         m_Animator.SetTrigger("Close");
+        GetComponent<BoxCollider>().isTrigger = false;
     }
 }
