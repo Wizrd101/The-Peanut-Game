@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorButtonAnimation : MonoBehaviour
 {
-    private bool doorstate;
+    private bool doorstate = false;
     //false = close, true = open
     public GameObject Door;
     Animator m_Animator;
@@ -26,10 +26,12 @@ public class DoorButtonAnimation : MonoBehaviour
         if (doorstate == false)
         {
         Door.GetComponent<DoorAnimation>().Open();
+            doorstate = true;
         }
         else
         {
         Door.GetComponent<DoorAnimation>().Close();
+            doorstate = false;
         }
     }
 }
