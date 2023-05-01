@@ -4,23 +4,32 @@ using UnityEngine;
 
 public class DoorButtonAnimation : MonoBehaviour
 {
+    private bool doorstate;
+    //false = close, true = open
+    public GameObject Door;
     Animator m_Animator;
-    // Start is called before the first frame update
+
     void Start()
     {
         m_Animator = gameObject.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        if (Input.GetKeyDown("up"))
-        {
-        m_Animator.SetTrigger("Push");
-        }
+
     }
+    //Animation for the button being pressed
     public void Push()
     {
         m_Animator.SetTrigger("Push");
+        if (doorstate == false)
+        {
+        Door.GetComponent<DoorAnimation>().Open();
+        }
+        else
+        {
+        Door.GetComponent<DoorAnimation>().Close();
+        }
     }
 }
