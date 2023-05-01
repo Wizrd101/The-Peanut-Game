@@ -23,7 +23,7 @@ public class DoorAnimation : MonoBehaviour
         m_Animator.SetTrigger("Open");
     }
 
-    public void close()
+    public void Close()
     {
         m_Animator.SetTrigger("Close");
     }
