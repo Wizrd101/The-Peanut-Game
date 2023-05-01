@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelTwoNextLevelTrigger : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class LevelTwoNextLevelTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Trigger Next Level");
+            //Debug.Log("Trigger Next Level");
+            SceneManager.LoadScene("Levelthreescene");
         }
     }
 }
