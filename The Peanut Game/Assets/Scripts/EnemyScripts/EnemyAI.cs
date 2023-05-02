@@ -15,6 +15,7 @@ public class EnemyAI : MonoBehaviour
     public Transform[] waypoints;
     int waypointIndex;
     Vector3 target;
+    public float waypointTriggerDist = 1;
 
     // Chase variables
     [SerializeField] float patrolSpeed = 200;
@@ -59,11 +60,14 @@ public class EnemyAI : MonoBehaviour
         // OPTION: I could nest this If statement into the else statement above, which would not update
         // the waypoints when the enemy is chasing the player. I'm not sure; more testing required.
         // If I do, nest it above all code currently in the statement. (from the agent.SetDestination up)
-        if (Vector3.Distance(transform.position, target) <= 1)
+        if (Vector3.Distance(transform.position, target) <= waypointTriggerDist)
         {
             Debug.Log("Going to next waypoint");
             IterateWaypointIndex();
             UpdateDestination();
+            //Debug.Log(target.x);
+            //Debug.Log(target.y);
+            //Debug.Log(target.z);
         }
     }
 
