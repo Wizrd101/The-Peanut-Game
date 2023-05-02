@@ -22,6 +22,7 @@ public class DoorAnimation : MonoBehaviour
     {
         m_Animator.SetTrigger("Open");
         GetComponent<BoxCollider>().isTrigger = true;
+        Debug.Log("Open");
     }
 
     public void Close()

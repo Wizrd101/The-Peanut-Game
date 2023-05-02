@@ -8,10 +8,15 @@ public class DoorButtonAnimation : MonoBehaviour
     //false = close, true = open
     public GameObject Door;
     Animator m_Animator;
+    public InventoryManager inventoryManager;
+    public GameObject InvMan;
+
+    bool openable;
 
     void Start()
     {
         m_Animator = gameObject.GetComponent<Animator>();
+        inventoryManager = InvMan.GetComponent<InventoryManager>();
     }
 
 
@@ -23,7 +28,13 @@ public class DoorButtonAnimation : MonoBehaviour
     public void Push()
     {
         m_Animator.SetTrigger("Push");
-        if (doorstate == false)
+
+        if (inventoryManager._inventoryItems.Contains(InventoryManager.AllItems.KeyCard1))
+        {
+            openable = true;
+        }
+
+        if (doorstate == false && openable)
         {
         Door.GetComponent<DoorAnimation>().Open();
             doorstate = true;
