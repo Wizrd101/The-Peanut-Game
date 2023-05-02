@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KeyBehaviour : MonoBehaviour
 {
-	[SerializeField] InventoryManager.AllItems _itemType;
+	/*[SerializeField] InventoryManager.AllItems _itemType;
 
 	private void OnTriggerEnter(Collider other)
 	{
@@ -12,5 +12,5 @@ public class KeyBehaviour : MonoBehaviour
 		{
 
 		}
-	}
+	}*/
 }
