@@ -10,7 +10,8 @@ public class KeyBehaviour : MonoBehaviour
 	{
 		if (other.CompareTag("Player"))
 		{
-
+			InventoryManager.Instance.AddItem(_itemType);
+			Destroy(gameObject);
 		}
 	}
 }
