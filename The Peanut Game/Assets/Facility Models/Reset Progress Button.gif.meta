@@ -147,9 +147,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 17
+        y: 18
         width: 65
-        height: 19
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,6 +159,27 @@ TextureImporter:
       bones: []
       spriteID: 5e3cd8283b3fd1a499a43d524b2ffe3f
       internalID: -1461365917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reset Progress Button_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 65
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeae21081cf57fc41a67906cf94b14e8
+      internalID: 1189968093
       vertices: []
       indices: 
       edges: []
@@ -175,6 +196,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Reset Progress Button_0: -1461365917
+      Reset Progress Button_1: 1189968093
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

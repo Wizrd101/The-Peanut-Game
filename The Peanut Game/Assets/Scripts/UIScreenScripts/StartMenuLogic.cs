@@ -10,6 +10,11 @@ public class StartMenuLogic : MonoBehaviour
         SceneManager.LoadScene("InstructionsScreen");
     }
 
+    public void ResetProgress()
+    {
+
+    }
+
     public void Quit()
     {
         Application.Quit();

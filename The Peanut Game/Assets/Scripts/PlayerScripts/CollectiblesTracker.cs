@@ -14,6 +14,9 @@ public class CollectiblesTracker : MonoBehaviour
     // Basically tells the player "Hey, you can pick this up!"
     public Canvas colCanvas;
 
+    // Accessing the Save function to tell it what collectibles have been picked up.
+    public BinarySave binarySave;
+
     void Start ()
     {
         tempCollectibles = 0;
@@ -55,7 +58,6 @@ public class CollectiblesTracker : MonoBehaviour
                 {
                     tempCollectibles++;
                     Debug.Log(tempCollectibles);
-                    PlayerPrefs.SetInt("Collectibles", tempCollectibles);
                     Destroy(hitTemp.gameObject);
                 }
             }
