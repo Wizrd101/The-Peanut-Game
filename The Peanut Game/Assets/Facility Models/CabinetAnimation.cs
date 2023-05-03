@@ -15,15 +15,15 @@ public class CabinetAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKeyDown("up"))
-        //{
-        //m_Animator.SetTrigger("Open");
-        //}
+        if (Input.GetKeyDown("up"))
+        {
+        m_Animator.SetTrigger("Open");
+        }
 
-        //if (Input.GetKeyDown("down"))
-        //{
-        //    m_Animator.SetTrigger("Close");
-        //}
+        if (Input.GetKeyDown("down"))
+        {
+            m_Animator.SetTrigger("Close");
+        }
     }
 
     public void Open()
