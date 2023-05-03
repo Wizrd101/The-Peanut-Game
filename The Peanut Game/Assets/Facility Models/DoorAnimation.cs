@@ -6,6 +6,8 @@ public class DoorAnimation : MonoBehaviour
 {
     Animator m_Animator;
 
+    bool doorIsOpen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,14 +22,22 @@ public class DoorAnimation : MonoBehaviour
 
     public void Open()
     {
-        m_Animator.SetTrigger("Open");
-        GetComponent<BoxCollider>().isTrigger = true;
-        Debug.Log("Open");
+        if (!doorIsOpen)
+        {
+            m_Animator.SetTrigger("Open");
+            GetComponent<BoxCollider>().isTrigger = true;
+            doorIsOpen = true;
+            Debug.Log("Open");
+        }
     }
 
     public void Close()
     {
-        m_Animator.SetTrigger("Close");
-        GetComponent<BoxCollider>().isTrigger = false;
+        if (doorIsOpen)
+        {
+            m_Animator.SetTrigger("Close");
+            GetComponent<BoxCollider>().isTrigger = false;
+            doorIsOpen = false;
+        }
     }
 }
