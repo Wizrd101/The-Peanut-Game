@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CabinetAnimation : MonoBehaviour
+public class ReaderAnimation : MonoBehaviour
 {
     Animator m_Animator;
 
@@ -17,22 +17,12 @@ public class CabinetAnimation : MonoBehaviour
     {
         //if (Input.GetKeyDown("up"))
         //{
-        //m_Animator.SetTrigger("Open");
-        //}
-
-        //if (Input.GetKeyDown("down"))
-        //{
-        //    m_Animator.SetTrigger("Close");
+        //m_Animator.SetTrigger("Swipe");
         //}
     }
 
-    public void Open()
+    public void Swipe()
     {
-        m_Animator.SetTrigger("Open");
-    }
-
-    public void close()
-    {
-        m_Animator.SetTrigger("Close");
+        m_Animator.SetTrigger("Swipe");
     }
 }
