@@ -7,11 +7,6 @@ public class StartMenuLogic : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("LevelOneScene");
-    }
-
-    public void Instructions()
-    {
         SceneManager.LoadScene("InstructionsScreen");
     }
 
