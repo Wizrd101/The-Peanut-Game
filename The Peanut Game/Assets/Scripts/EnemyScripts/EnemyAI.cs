@@ -11,7 +11,7 @@ public class EnemyAI : MonoBehaviour
     // Declaring the variables
     public NavMeshAgent agent;
 
-    // Waypoint variables
+    // Waypoint variabless
     public Transform[] waypoints;
     int waypointIndex;
     Vector3 target;
@@ -74,13 +74,13 @@ public class EnemyAI : MonoBehaviour
     // Changes between the waypoints
     void IterateWaypointIndex()
     {
-        // Simply selects the next waypoint in the list
+        // Selects the next waypoint in the list
         waypointIndex++;
         if (waypointIndex == waypoints.Length)
         {
             /* This part is commented out because it doesn't fit the theme, but I might want it when I save the script.
-            Instead, we're going to have the monster gain an extremely aware sense after finishing 21 waypoints, 
-            Gaining exact knowledge of where the player is (and being permenantly set to chase mode)
+            Instead, we're going to have the monster gain an extremely aware sense after finishing all the waypoints, 
+            gaining exact knowledge of where the player is (and being permenantly set to chase mode)
             This will help put the pressure on players that juked him out or are dawdling and trying to get all the collectibles. Heh heh heh...*/
             
             //waypointIndex = 0;
