@@ -7,12 +7,12 @@ public class StartMenuLogic : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("LevelOneScene");
+        SceneManager.LoadScene("InstructionsScreen");
     }
 
-    public void Instructions()
+    public void ResetProgress()
     {
-        SceneManager.LoadScene("InstructionsScreen");
+
     }
 
     public void Quit()
