@@ -8,6 +8,7 @@ public class ReaderAnimation : MonoBehaviour
     Animator m_Animator;
     public float ReaderRange = 30;
     public InventoryManager inventoryManager;
+    private bool Ready = false;
 
     // Start is called before the first frame update
     void Start()
@@ -35,12 +36,15 @@ public class ReaderAnimation : MonoBehaviour
             GameObject hitTemp = hit.collider.gameObject;
             if (hitTemp.tag == "Reader")
             {
-
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     if (inventoryManager._inventoryItems.Contains(InventoryManager.AllItems.KeyCard1))
                     {
-                        m_Animator.SetTrigger("Swipe");
+                        if (Ready == false)
+                        {
+                           m_Animator.SetTrigger("Swipe");
+                            Ready = true;
+                        }
                     }
                 }
             }
