@@ -12,7 +12,7 @@ public class CollectiblesRecord : MonoBehaviour
     public int cols;
 
     // Save Data script
-    public BinarySave binarySave;
+    BinarySave binarySave;
 
     void Awake()
     {
