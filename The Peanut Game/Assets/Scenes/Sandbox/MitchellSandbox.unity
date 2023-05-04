@@ -1311,11 +1311,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d9bde12c4b7c943be4be82c3671d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rechargeTime: 0
   drainOverTime: 1
   maxBrightness: 1
-  minBrightness: 0
-  drainRate: 90
-  rechargeRate: 0
+  minBrightness: 0.1
+  drainRate: 5
 --- !u!1001 &851029755
 PrefabInstance:
   m_ObjectHideFlags: 0
