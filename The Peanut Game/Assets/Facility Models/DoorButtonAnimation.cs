@@ -9,14 +9,12 @@ public class DoorButtonAnimation : MonoBehaviour
     public GameObject Door;
     Animator m_Animator;
     public InventoryManager inventoryManager;
-    public GameObject InvMan;
 
     bool openable;
 
     void Start()
     {
         m_Animator = gameObject.GetComponent<Animator>();
-        inventoryManager = InvMan.GetComponent<InventoryManager>();
     }
 
 
