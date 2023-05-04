@@ -30,10 +30,10 @@ public class LevelOneNextLevelTrigger : MonoBehaviour
             if (colTwo == null)
             {
                 bs.gameData.collectibleTwoCollected = true;
-                Debug.Log("Collectible 1 Gotten");
+                Debug.Log("Collectible 2 Gotten");
             }
             //Debug.Log("Trigger Next Level");
-            SceneManager.LoadScene("Levelthreescene");
+            SceneManager.LoadScene("Leveltwoscene");
         }
     }
 }
