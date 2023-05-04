@@ -27,12 +27,12 @@ public class DoorButtonAnimation : MonoBehaviour
     {
         m_Animator.SetTrigger("Push");
 
-        if (inventoryManager._inventoryItems.Contains(InventoryManager.AllItems.KeyCard1))
-        {
-            openable = true;
-        }
+        //if (inventoryManager._inventoryItems.Contains(InventoryManager.AllItems.KeyCard1))
+        //{
+        //    openable = true;
+        //}
 
-        if (doorstate == false && openable)
+        if (doorstate == false) //&& openable)
         {
         Door.GetComponent<DoorAnimation>().Open();
             doorstate = true;

@@ -9,6 +9,7 @@ public class ReaderAnimation : MonoBehaviour
     public float ReaderRange = 30;
     public InventoryManager inventoryManager;
     private bool Ready = false;
+    public GameObject Door;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +45,7 @@ public class ReaderAnimation : MonoBehaviour
                         {
                            m_Animator.SetTrigger("Swipe");
                             Ready = true;
+                           Door.GetComponent<DoorAnimation>().Open();
                         }
                     }
                 }
