@@ -16,7 +16,7 @@ public class CollectiblesTracker : MonoBehaviour
     public Canvas colCanvas;
 
     // Accessing the Save function to tell it what collectibles have been picked up.
-    public BinarySave binarySave;
+    BinarySave binarySave;
 
 
     /*public GameObject colOne;
@@ -76,8 +76,8 @@ public class CollectiblesTracker : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     tempCollectibles++;
-                    Debug.Log(tempCollectibles);
-                    hit.collider.enabled = false;
+                    //hit.collider.enabled = false;
+                    Destroy(hitTemp);
                 }
             }
             // ...Otherwise, it's a random object, disable the canvas (or keep it disabled)
