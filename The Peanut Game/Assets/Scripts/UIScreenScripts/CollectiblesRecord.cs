@@ -5,13 +5,19 @@ using TMPro;
 
 public class CollectiblesRecord : MonoBehaviour
 {
+    // Text object to be changed
     public TextMeshProUGUI collectiblesText;
 
+    // Temporary collectibles variable
     public int cols;
+
+    // Save Data script
+    public BinarySave binarySave;
 
     void Awake()
     {
-        cols = PlayerPrefs.GetInt("Collectibles");
+        // Figure out what cols should be
+        cols = binarySave.gameData.collectiblesRetrived;
     }
 
     void Start()
