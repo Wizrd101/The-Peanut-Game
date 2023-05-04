@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollectiblesTracker : MonoBehaviour
 {
@@ -17,11 +18,29 @@ public class CollectiblesTracker : MonoBehaviour
     // Accessing the Save function to tell it what collectibles have been picked up.
     public BinarySave binarySave;
 
+
+    /*public GameObject colOne;
+    public GameObject colTwo;
+    public GameObject colThree;
+    public GameObject colFour;
+    public GameObject colFive;*/
+
     void Start ()
     {
         tempCollectibles = 0;
         PlayerPrefs.SetInt("Collectibles", 0);
         colCanvas.enabled = false;
+
+        /*Scene currentScene = SceneManager.GetActiveScene();
+
+        if (currentScene.buildIndex == 2)
+        {
+
+            if (binarySave.gameData.collectibleOneCollected)
+            {
+                Destroy();
+            }
+        }*/
     }
 
     // Old system, outdated. Going to use Raycasts instead.
@@ -58,7 +77,7 @@ public class CollectiblesTracker : MonoBehaviour
                 {
                     tempCollectibles++;
                     Debug.Log(tempCollectibles);
-                    Destroy(hitTemp.gameObject);
+                    hit.collider.enabled = false;
                 }
             }
             // ...Otherwise, it's a random object, disable the canvas (or keep it disabled)
