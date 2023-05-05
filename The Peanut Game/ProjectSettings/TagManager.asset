@@ -9,6 +9,7 @@ TagManager:
   - Collectible
   - Enemy
   - Button
+  - Reader
   layers:
   - Default
   - TransparentFX
