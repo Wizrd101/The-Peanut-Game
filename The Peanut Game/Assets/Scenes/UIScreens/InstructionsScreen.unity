@@ -1655,7 +1655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78af64c47bc065149a4599fa589997e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.471495
+      value: 11.339
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78af64c47bc065149a4599fa589997e4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1663,7 +1663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78af64c47bc065149a4599fa589997e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.8629112
+      value: -2.294
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78af64c47bc065149a4599fa589997e4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1704,7 +1704,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 78af64c47bc065149a4599fa589997e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1940663216}
   m_SourcePrefab: {fileID: 100100000, guid: 78af64c47bc065149a4599fa589997e4, type: 3}
 --- !u!64 &406022493
 MeshCollider:
@@ -2228,6 +2231,35 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2865104911859505335, guid: 1e972a9dbea12ce44832d98bc14ed31e, type: 3}
+--- !u!1 &600834219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 1337991161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!167 &600834232
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600834219}
+  m_Enabled: 1
+  m_MinDistance: 10
+  m_MaxDistance: 15
+  m_ReverbPreset: 22
+  m_Room: -1000
+  m_RoomHF: -1000
+  m_DecayTime: 2.81
+  m_DecayHFRatio: 0.14
+  m_Reflections: 429
+  m_ReflectionsDelay: 0.014
+  m_Reverb: 1023
+  m_ReverbDelay: 0.021
+  m_HFReference: 5000
+  m_Diffusion: 80
+  m_Density: 60
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!64 &608570474
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6719,7 +6751,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60250
+  m_Name: pb_Mesh36854
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -6888,7 +6920,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2842872825372590623, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5303572036947100849, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Size.x
@@ -6908,7 +6940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: MoveSpeed
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Enabled
@@ -6920,7 +6952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: SprintSpeed
-      value: 18
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: RotationSpeed
@@ -6944,7 +6976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8671684098423610026, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8671684098423610026, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_audioClip
@@ -7002,7 +7034,10 @@ PrefabInstance:
     - {fileID: 3216757098213916099, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 600834232}
   m_SourcePrefab: {fileID: 100100000, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
 --- !u!4 &1337991162 stripped
 Transform:
@@ -9140,6 +9175,33 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4711208715938537054, guid: 1e972a9dbea12ce44832d98bc14ed31e, type: 3}
+--- !u!1 &1940663213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 78af64c47bc065149a4599fa589997e4, type: 3}
+  m_PrefabInstance: {fileID: 392109226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1940663216
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940663213}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -462981019419857548, guid: 78af64c47bc065149a4599fa589997e4, type: 3}
 --- !u!4 &1953052235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 78af64c47bc065149a4599fa589997e4, type: 3}

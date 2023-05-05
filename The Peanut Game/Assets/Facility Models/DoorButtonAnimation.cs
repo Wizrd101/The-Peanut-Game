@@ -8,7 +8,7 @@ public class DoorButtonAnimation : MonoBehaviour
     //false = close, true = open
     public GameObject Door;
     Animator m_Animator;
-    public InventoryManager inventoryManager;
+    //public InventoryManager inventoryManager;
 
     bool openable;
 

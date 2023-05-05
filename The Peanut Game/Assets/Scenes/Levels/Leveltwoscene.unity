@@ -11336,7 +11336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!167 &531293878
 AudioReverbZone:
   m_ObjectHideFlags: 0
@@ -11347,18 +11347,18 @@ AudioReverbZone:
   m_Enabled: 1
   m_MinDistance: 1
   m_MaxDistance: 10
-  m_ReverbPreset: 22
-  m_Room: -1000
-  m_RoomHF: -1000
-  m_DecayTime: 2.81
-  m_DecayHFRatio: 0.14
-  m_Reflections: 429
-  m_ReflectionsDelay: 0.014
-  m_Reverb: 1023
-  m_ReverbDelay: 0.021
+  m_ReverbPreset: 27
+  m_Room: -4035
+  m_RoomHF: -10000
+  m_DecayTime: 1
+  m_DecayHFRatio: 1
+  m_Reflections: -2602
+  m_ReflectionsDelay: 0.007
+  m_Reverb: 200
+  m_ReverbDelay: 0.011
   m_HFReference: 5000
-  m_Diffusion: 80
-  m_Density: 60
+  m_Diffusion: 0
+  m_Density: 0
   m_LFReference: 250
   m_RoomLF: 0
 --- !u!82 &531293879
@@ -11373,13 +11373,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ce3f21bfca1ff7a40a74f400ba96b790, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.625
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 191
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 10
@@ -14435,6 +14435,11 @@ MeshCollider:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e972a9dbea12ce44832d98bc14ed31e, type: 3}
   m_PrefabInstance: {fileID: 2117675715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &652483389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 1359209693}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &654880948 stripped
 Transform:
@@ -28713,7 +28718,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1198864083242611237, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4135013735270702856, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_LocalScale.x
@@ -28772,9 +28777,17 @@ PrefabInstance:
       value: PlayerCapsule
       objectReference: {fileID: 0}
     - target: {fileID: 8671684098423610026, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: Priority
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671684098423610026, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 990c60be5ab8c4e49890dedfbd8c9490, type: 3}
+    - target: {fileID: 8671684098423610026, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -28834,7 +28847,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1389749030}
   m_SourcePrefab: {fileID: 100100000, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
 --- !u!4 &1359209694 stripped
 Transform:
@@ -29530,6 +29546,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
   m_PrefabInstance: {fileID: 1359209693}
   m_PrefabAsset: {fileID: 0}
+--- !u!167 &1389749030
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652483389}
+  m_Enabled: 1
+  m_MinDistance: 10
+  m_MaxDistance: 15
+  m_ReverbPreset: 22
+  m_Room: -1000
+  m_RoomHF: -1000
+  m_DecayTime: 2.81
+  m_DecayHFRatio: 0.14
+  m_Reflections: 429
+  m_ReflectionsDelay: 0.014
+  m_Reverb: 1023
+  m_ReverbDelay: 0.021
+  m_HFReference: 5000
+  m_Diffusion: 80
+  m_Density: 60
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!1001 &1394528278
 PrefabInstance:
   m_ObjectHideFlags: 0
