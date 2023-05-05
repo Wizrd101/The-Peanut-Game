@@ -5,7 +5,7 @@ using UnityEngine;
 public class ButtonDetector : MonoBehaviour
 {
     //public GameObject Button; 
-    public float ButtonRange = 30;
+    public float ButtonRange = 100;
     // Start is called before the first frame update
     void Start()
     {
