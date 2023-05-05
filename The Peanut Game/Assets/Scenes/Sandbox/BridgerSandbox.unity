@@ -3086,7 +3086,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5fcc7a23b4355fa418fd7c43b26b1d04, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fcc7a23b4355fa418fd7c43b26b1d04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3132,6 +3132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorCardReader
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5fcc7a23b4355fa418fd7c43b26b1d04, type: 3}
+      propertyPath: m_TagString
+      value: Reader
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3176,7 +3180,7 @@ Animator:
   m_GameObject: {fileID: 1374988801}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 970c236f93d76e94797a57839452a4b7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3205,8 +3209,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.07770586, y: 0.96002674, z: 0.6666331}
+  m_Center: {x: -0.013457537, y: 1.3597932, z: 0.0015852451}
 --- !u!1 &1375342375 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7fd517858063c29498fd986fd8ea9638, type: 3}
