@@ -100,9 +100,9 @@ public class GameData
 
     // This project will save the collectibles, like if the player has retrived them or not.
     public int collectiblesRetrived;
-    public bool colectibleOneCollected;
-    public bool colectibleTwoCollected;        
-    public bool colectibleThreeCollected;
-    public bool colectibleFourCollected;
-    public bool colectibleFiveCollected;
+    public bool collectibleOneCollected;
+    public bool collectibleTwoCollected;        
+    public bool collectibleThreeCollected;
+    public bool collectibleFourCollected;
+    public bool collectibleFiveCollected;
 }

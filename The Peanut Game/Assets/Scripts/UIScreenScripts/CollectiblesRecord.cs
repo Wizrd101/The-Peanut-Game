@@ -12,7 +12,7 @@ public class CollectiblesRecord : MonoBehaviour
     public int cols;
 
     // Save Data script
-    public BinarySave binarySave;
+    BinarySave binarySave;
 
     void Awake()
     {
@@ -25,7 +25,7 @@ public class CollectiblesRecord : MonoBehaviour
         if (cols == 0)
         {
             // If the player got 0 fragments of research
-            collectiblesText.text = "Dr. Raven made it out of that place alive, but had Forgotten some much important documents that he couldn't leave behind. No matter, it was too late, as the on-site nuke was to set off. Dr. Raven boarded the helicopter and flew to safety.";
+            collectiblesText.text = "Dr. Raven made it out of that place alive, but had forgotten some much important documents that he couldn't leave behind. No matter, it was too late, as the on-site nuke was to set off. Dr. Raven boarded the helicopter and flew to safety.";
         }
         else if (cols == 1)
         {
