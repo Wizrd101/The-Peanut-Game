@@ -4080,6 +4080,7 @@ GameObject:
   - component: {fileID: 232704459}
   - component: {fileID: 232704458}
   - component: {fileID: 232704457}
+  - component: {fileID: 232704460}
   m_Layer: 0
   m_Name: Spot Light (5)
   m_TagString: Untagged
@@ -4187,6 +4188,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &232704460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232704456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &235794164
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4524,6 +4538,7 @@ GameObject:
   - component: {fileID: 255514507}
   - component: {fileID: 255514506}
   - component: {fileID: 255514505}
+  - component: {fileID: 255514508}
   m_Layer: 0
   m_Name: Spot Light (15)
   m_TagString: Untagged
@@ -4631,6 +4646,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &255514508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255514504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!1001 &260063863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5920,6 +5948,7 @@ GameObject:
   - component: {fileID: 278355603}
   - component: {fileID: 278355602}
   - component: {fileID: 278355601}
+  - component: {fileID: 278355604}
   m_Layer: 0
   m_Name: Spot Light (20)
   m_TagString: Untagged
@@ -6027,6 +6056,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &278355604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278355600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &278699504
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6890,6 +6932,7 @@ GameObject:
   - component: {fileID: 313934526}
   - component: {fileID: 313934525}
   - component: {fileID: 313934524}
+  - component: {fileID: 313934527}
   m_Layer: 0
   m_Name: Spot Light (6)
   m_TagString: Untagged
@@ -6997,6 +7040,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &313934527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313934523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!1001 &318854984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7971,6 +8027,7 @@ GameObject:
   - component: {fileID: 352295824}
   - component: {fileID: 352295823}
   - component: {fileID: 352295822}
+  - component: {fileID: 352295825}
   m_Layer: 0
   m_Name: Spot Light (19)
   m_TagString: Untagged
@@ -8078,6 +8135,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &352295825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352295821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &353644096
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8412,6 +8482,7 @@ GameObject:
   - component: {fileID: 397399917}
   - component: {fileID: 397399916}
   - component: {fileID: 397399915}
+  - component: {fileID: 397399918}
   m_Layer: 0
   m_Name: Spot Light (7)
   m_TagString: Untagged
@@ -8519,6 +8590,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &397399918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397399914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!1 &400416018
 GameObject:
   m_ObjectHideFlags: 0
@@ -9418,6 +9502,7 @@ GameObject:
   - component: {fileID: 415874224}
   - component: {fileID: 415874223}
   - component: {fileID: 415874222}
+  - component: {fileID: 415874225}
   m_Layer: 0
   m_Name: Spot Light (1)
   m_TagString: Untagged
@@ -9525,6 +9610,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &415874225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415874221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &422210226
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10143,6 +10241,7 @@ GameObject:
   - component: {fileID: 475763855}
   - component: {fileID: 475763854}
   - component: {fileID: 475763853}
+  - component: {fileID: 475763856}
   m_Layer: 0
   m_Name: Spot Light (12)
   m_TagString: Untagged
@@ -10250,6 +10349,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &475763856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475763852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &475950704
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14239,6 +14351,7 @@ GameObject:
   - component: {fileID: 625133325}
   - component: {fileID: 625133324}
   - component: {fileID: 625133323}
+  - component: {fileID: 625133326}
   m_Layer: 0
   m_Name: Spot Light (21)
   m_TagString: Untagged
@@ -14346,6 +14459,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &625133326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625133322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!1 &625749704
 GameObject:
   m_ObjectHideFlags: 0
@@ -14782,6 +14908,7 @@ GameObject:
   - component: {fileID: 674601783}
   - component: {fileID: 674601782}
   - component: {fileID: 674601781}
+  - component: {fileID: 674601784}
   m_Layer: 0
   m_Name: Spot Light (23)
   m_TagString: Untagged
@@ -14889,6 +15016,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &674601784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674601780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &675265070
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15697,6 +15837,7 @@ GameObject:
   - component: {fileID: 710680190}
   - component: {fileID: 710680189}
   - component: {fileID: 710680188}
+  - component: {fileID: 710680191}
   m_Layer: 0
   m_Name: Spot Light (4)
   m_TagString: Untagged
@@ -15804,6 +15945,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &710680191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710680187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &711707474
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16360,6 +16514,7 @@ GameObject:
   - component: {fileID: 772109106}
   - component: {fileID: 772109105}
   - component: {fileID: 772109104}
+  - component: {fileID: 772109107}
   m_Layer: 0
   m_Name: Spot Light (10)
   m_TagString: Untagged
@@ -16467,6 +16622,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &772109107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772109103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &772184430
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20113,6 +20281,7 @@ GameObject:
   - component: {fileID: 910505550}
   - component: {fileID: 910505549}
   - component: {fileID: 910505548}
+  - component: {fileID: 910505551}
   m_Layer: 0
   m_Name: Spot Light (9)
   m_TagString: Untagged
@@ -20220,6 +20389,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &910505551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910505547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!1 &912407156
 GameObject:
   m_ObjectHideFlags: 0
@@ -21352,6 +21534,7 @@ GameObject:
   - component: {fileID: 978977479}
   - component: {fileID: 978977478}
   - component: {fileID: 978977477}
+  - component: {fileID: 978977480}
   m_Layer: 0
   m_Name: Spot Light (25)
   m_TagString: Untagged
@@ -21459,6 +21642,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &978977480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978977476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!4 &981451424 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e972a9dbea12ce44832d98bc14ed31e, type: 3}
@@ -24262,6 +24458,7 @@ GameObject:
   - component: {fileID: 1095665106}
   - component: {fileID: 1095665105}
   - component: {fileID: 1095665104}
+  - component: {fileID: 1095665107}
   m_Layer: 0
   m_Name: Spot Light (24)
   m_TagString: Untagged
@@ -24369,6 +24566,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1095665107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095665103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &1097986298
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24804,6 +25014,7 @@ GameObject:
   - component: {fileID: 1126275296}
   - component: {fileID: 1126275295}
   - component: {fileID: 1126275294}
+  - component: {fileID: 1126275297}
   m_Layer: 0
   m_Name: Spot Light (3)
   m_TagString: Untagged
@@ -24911,6 +25122,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1126275297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126275293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &1151026218
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25126,6 +25350,7 @@ GameObject:
   - component: {fileID: 1166312987}
   - component: {fileID: 1166312986}
   - component: {fileID: 1166312985}
+  - component: {fileID: 1166312988}
   m_Layer: 0
   m_Name: Spot Light (11)
   m_TagString: Untagged
@@ -25233,6 +25458,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1166312988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166312984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &1169003636
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27403,6 +27641,7 @@ GameObject:
   - component: {fileID: 1303953396}
   - component: {fileID: 1303953395}
   - component: {fileID: 1303953394}
+  - component: {fileID: 1303953397}
   m_Layer: 0
   m_Name: Spot Light (17)
   m_TagString: Untagged
@@ -27510,6 +27749,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1303953397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303953393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &1312104544
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28227,6 +28479,7 @@ GameObject:
   - component: {fileID: 1331994627}
   - component: {fileID: 1331994626}
   - component: {fileID: 1331994625}
+  - component: {fileID: 1331994628}
   m_Layer: 0
   m_Name: Spot Light (22)
   m_TagString: Untagged
@@ -28334,6 +28587,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1331994628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331994624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!43 &1337583092
 Mesh:
   m_ObjectHideFlags: 0
@@ -29012,6 +29278,7 @@ GameObject:
   - component: {fileID: 1378670092}
   - component: {fileID: 1378670091}
   - component: {fileID: 1378670090}
+  - component: {fileID: 1378670093}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -29119,6 +29386,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1378670093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378670089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!1 &1381671124
 GameObject:
   m_ObjectHideFlags: 0
@@ -32898,6 +33178,7 @@ GameObject:
   - component: {fileID: 1509414973}
   - component: {fileID: 1509414972}
   - component: {fileID: 1509414971}
+  - component: {fileID: 1509414974}
   m_Layer: 0
   m_Name: Spot Light (26)
   m_TagString: Untagged
@@ -33005,6 +33286,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1509414974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509414970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!4 &1509612006 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e972a9dbea12ce44832d98bc14ed31e, type: 3}
@@ -34587,6 +34881,7 @@ GameObject:
   - component: {fileID: 1617983442}
   - component: {fileID: 1617983441}
   - component: {fileID: 1617983440}
+  - component: {fileID: 1617983443}
   m_Layer: 0
   m_Name: Spot Light (29)
   m_TagString: Untagged
@@ -34694,6 +34989,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1617983443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617983439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!1001 &1621709237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36296,6 +36604,7 @@ GameObject:
   - component: {fileID: 1671608731}
   - component: {fileID: 1671608730}
   - component: {fileID: 1671608729}
+  - component: {fileID: 1671608732}
   m_Layer: 0
   m_Name: Spot Light (2)
   m_TagString: Untagged
@@ -36403,6 +36712,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1671608732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671608728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &1672457032
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -38981,6 +39303,7 @@ GameObject:
   - component: {fileID: 1743850251}
   - component: {fileID: 1743850250}
   - component: {fileID: 1743850249}
+  - component: {fileID: 1743850252}
   m_Layer: 0
   m_Name: Spot Light (16)
   m_TagString: Untagged
@@ -39088,6 +39411,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1743850252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743850248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!1 &1748936256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fa92190fbaf1bca47ae7327bac031580, type: 3}
@@ -39531,6 +39867,7 @@ GameObject:
   - component: {fileID: 1800538050}
   - component: {fileID: 1800538049}
   - component: {fileID: 1800538048}
+  - component: {fileID: 1800538051}
   m_Layer: 0
   m_Name: Spot Light (28)
   m_TagString: Untagged
@@ -39638,6 +39975,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1800538051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800538047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &1801711859
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40265,6 +40615,7 @@ GameObject:
   - component: {fileID: 1823515721}
   - component: {fileID: 1823515720}
   - component: {fileID: 1823515719}
+  - component: {fileID: 1823515722}
   m_Layer: 0
   m_Name: Spot Light (27)
   m_TagString: Untagged
@@ -40372,6 +40723,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1823515722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823515718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!43 &1824215004
 Mesh:
   m_ObjectHideFlags: 0
@@ -42017,6 +42381,7 @@ GameObject:
   - component: {fileID: 1931307183}
   - component: {fileID: 1931307182}
   - component: {fileID: 1931307181}
+  - component: {fileID: 1931307184}
   m_Layer: 0
   m_Name: Spot Light (13)
   m_TagString: Untagged
@@ -42124,6 +42489,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1931307184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931307180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!64 &1941437137
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43353,6 +43731,7 @@ GameObject:
   - component: {fileID: 1987718142}
   - component: {fileID: 1987718141}
   - component: {fileID: 1987718140}
+  - component: {fileID: 1987718143}
   m_Layer: 0
   m_Name: Spot Light (8)
   m_TagString: Untagged
@@ -43460,6 +43839,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1987718143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987718139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!1001 &1989743904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45681,6 +46073,7 @@ GameObject:
   - component: {fileID: 2077366035}
   - component: {fileID: 2077366034}
   - component: {fileID: 2077366033}
+  - component: {fileID: 2077366036}
   m_Layer: 0
   m_Name: Spot Light (14)
   m_TagString: Untagged
@@ -45788,6 +46181,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &2077366036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077366032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!1001 &2083937852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47072,6 +47478,7 @@ GameObject:
   - component: {fileID: 2129747381}
   - component: {fileID: 2129747380}
   - component: {fileID: 2129747379}
+  - component: {fileID: 2129747382}
   m_Layer: 0
   m_Name: Spot Light (18)
   m_TagString: Untagged
@@ -47179,6 +47586,19 @@ Transform:
   m_Father: {fileID: 1242954132}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &2129747382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129747378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26de7a88be464c479f1ce80f966eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerEventTrigger: 10
 --- !u!1001 &2130548928
 PrefabInstance:
   m_ObjectHideFlags: 0
