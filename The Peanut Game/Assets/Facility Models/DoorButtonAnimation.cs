@@ -9,12 +9,14 @@ public class DoorButtonAnimation : MonoBehaviour
     public GameObject Door;
     Animator m_Animator;
     //public InventoryManager inventoryManager;
+    AudioSource audioData;
 
     bool openable;
 
     void Start()
     {
         m_Animator = gameObject.GetComponent<Animator>();
+        audioData = GetComponent<AudioSource>();
     }
 
 
@@ -26,6 +28,7 @@ public class DoorButtonAnimation : MonoBehaviour
     public void Push()
     {
         m_Animator.SetTrigger("Push");
+        audioData.Play(0);
 
         //if (inventoryManager._inventoryItems.Contains(InventoryManager.AllItems.KeyCard1))
         //{

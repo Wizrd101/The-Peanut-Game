@@ -10,11 +10,13 @@ public class ReaderAnimation : MonoBehaviour
     public InventoryManager inventoryManager;
     private bool Ready = false;
     public GameObject Door;
+    AudioSource audioData;
 
     // Start is called before the first frame update
     void Start()
     {
         m_Animator = gameObject.GetComponent<Animator>();
+        audioData = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -43,7 +45,8 @@ public class ReaderAnimation : MonoBehaviour
                     {
                         if (Ready == false)
                         {
-                           m_Animator.SetTrigger("Swipe");
+                            audioData.Play(0);
+                            m_Animator.SetTrigger("Swipe");
                             Ready = true;
                            Door.GetComponent<DoorAnimation>().Open();
                         }
