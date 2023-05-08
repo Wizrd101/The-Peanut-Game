@@ -37,7 +37,7 @@ public class FlashLight : MonoBehaviour
 			if (rechargeTime == true)
 			{
                 drainOverTime = false;
-                RechargeRate(0.0001f);
+                RechargeRate(.9f);
 			}
             if(m_light.intensity <= maxBrightness)
             {
