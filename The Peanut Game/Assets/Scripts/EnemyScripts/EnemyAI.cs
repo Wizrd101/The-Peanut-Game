@@ -27,9 +27,12 @@ public class EnemyAI : MonoBehaviour
     Vector3 playerVector;
     Vector3 moveDir;
 
+    Animator m_animator;
+
     // Sets some variables, like the agent component, the enemy speed, and the first waypoint
     void Start()
     {
+        m_animator = gameObject.GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.speed = patrolSpeed;
         UpdateDestination();
@@ -37,6 +40,7 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        m_animator.SetTrigger("Run");
         // Logic to convert the player's position into a Vector3 that spans from the enemy to the player
         playerVector = player.position;
         float playerVectorPosition = playerVector.magnitude;

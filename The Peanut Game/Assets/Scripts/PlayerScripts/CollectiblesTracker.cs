@@ -40,8 +40,7 @@ public class CollectiblesTracker : MonoBehaviour
                 Destroy(levelColTwo);
             }
         }
-
-        if (currentScene.buildIndex == 3)
+        else if (currentScene.buildIndex == 3)
         {
             if (PlayerPrefs.GetInt("ColThreeCollected") == 1)
             {
@@ -53,8 +52,7 @@ public class CollectiblesTracker : MonoBehaviour
                 Destroy(levelColTwo);
             }
         }
-
-        if (currentScene.buildIndex == 4 && PlayerPrefs.GetInt("ColFiveCollected") == 1)
+        else if (currentScene.buildIndex == 4 && PlayerPrefs.GetInt("ColFiveCollected") == 1)
         {
             Destroy(levelColOne);
         }
@@ -92,7 +90,6 @@ public class CollectiblesTracker : MonoBehaviour
                 // Also add 1 to the collectibles and destroy the collectible
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    //hit.collider.enabled = false;
 
                     if (currentScene.buildIndex == 2)
                     {
@@ -126,6 +123,15 @@ public class CollectiblesTracker : MonoBehaviour
                     }
 
                     Destroy(hitTemp);
+                }
+            }
+            // Or if we're in the Instructions screen, it's the collectible the player picks up to start the game...
+            else if (hitTemp.tag == "StartCol")
+            {
+                colCanvas.enabled = true;
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    SceneManager.LoadScene("LevelOneScene");
                 }
             }
             // ...Otherwise, it's a random object, disable the canvas (or keep it disabled)
