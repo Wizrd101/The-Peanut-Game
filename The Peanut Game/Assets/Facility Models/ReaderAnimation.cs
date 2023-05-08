@@ -12,7 +12,6 @@ public class ReaderAnimation : MonoBehaviour
     public GameObject Door;
     AudioSource audioData;
 
-    // Start is called before the first frame update
     void Start()
     {
         m_Animator = gameObject.GetComponent<Animator>();
