@@ -12,12 +12,15 @@ public class CollectiblesRecord : MonoBehaviour
     public int cols;
 
     // Save Data script
-    BinarySave binarySave;
+    //BinarySave binarySave;
 
     void Awake()
     {
         // Figure out what cols should be
-        cols = binarySave.gameData.collectiblesRetrived;
+        //cols = binarySave.gameData.collectiblesRetrived;
+
+        cols = PlayerPrefs.GetInt("ColOneCollected") + PlayerPrefs.GetInt("ColTwoCollected") + PlayerPrefs.GetInt("ColThreeCollected") 
+            + PlayerPrefs.GetInt("ColFourCollected") + PlayerPrefs.GetInt("ColFiveCollected");
     }
 
     void Start()

@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class CollectiblesTracker : MonoBehaviour
 {
-    // Temporary Collectibles Variables, to make it easier to transfer to PlayerPrefs
-    public int tempCollectibles;
 
     // Distance that the player can interact with collectibles
     public float colRange = 30;
@@ -16,31 +14,50 @@ public class CollectiblesTracker : MonoBehaviour
     public Canvas colCanvas;
 
     // Accessing the Save function to tell it what collectibles have been picked up.
-    BinarySave binarySave;
+    //BinarySave binarySave;
 
+    // Public access to the collectibles in the level
+    public GameObject levelColOne;
+    public GameObject levelColTwo;
 
-    /*public GameObject colOne;
-    public GameObject colTwo;
-    public GameObject colThree;
-    public GameObject colFour;
-    public GameObject colFive;*/
+    Scene currentScene;
 
     void Start ()
     {
-        tempCollectibles = 0;
-        PlayerPrefs.SetInt("Collectibles", 0);
         colCanvas.enabled = false;
 
-        /*Scene currentScene = SceneManager.GetActiveScene();
+        currentScene = SceneManager.GetActiveScene();
 
         if (currentScene.buildIndex == 2)
         {
-
-            if (binarySave.gameData.collectibleOneCollected)
+            if (PlayerPrefs.GetInt("ColOneCollected") == 1)
             {
-                Destroy();
+                Destroy(levelColOne);
             }
-        }*/
+
+            if (PlayerPrefs.GetInt("ColTwoCollected") == 1)
+            {
+                Destroy(levelColTwo);
+            }
+        }
+
+        if (currentScene.buildIndex == 3)
+        {
+            if (PlayerPrefs.GetInt("ColThreeCollected") == 1)
+            {
+                Destroy(levelColOne);
+            }
+
+            if (PlayerPrefs.GetInt("ColFourCollected") == 1)
+            {
+                Destroy(levelColTwo);
+            }
+        }
+
+        if (currentScene.buildIndex == 4 && PlayerPrefs.GetInt("ColFiveCollected") == 1)
+        {
+            Destroy(levelColOne);
+        }
     }
 
     // Old system, outdated. Going to use Raycasts instead.
@@ -75,8 +92,39 @@ public class CollectiblesTracker : MonoBehaviour
                 // Also add 1 to the collectibles and destroy the collectible
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    tempCollectibles++;
                     //hit.collider.enabled = false;
+
+                    if (currentScene.buildIndex == 2)
+                    {
+                        if (hitTemp == levelColOne)
+                        {
+                            PlayerPrefs.SetInt("ColOneCollected", 1);
+                        }
+
+                        if (hitTemp == levelColTwo)
+                        {
+                            PlayerPrefs.SetInt("ColTwoCollected", 1);
+                        }
+                    }
+
+                    if (currentScene.buildIndex == 3)
+                    {
+                        if (hitTemp == levelColOne)
+                        {
+                            PlayerPrefs.SetInt("ColThreeCollected", 1);
+                        }
+
+                        if (hitTemp == levelColTwo)
+                        {
+                            PlayerPrefs.SetInt("ColFourCollected", 1);
+                        }
+                    }
+                    
+                    if (currentScene.buildIndex == 4)
+                    {
+                        PlayerPrefs.SetInt("ColFiveCollected", 1);
+                    }
+
                     Destroy(hitTemp);
                 }
             }

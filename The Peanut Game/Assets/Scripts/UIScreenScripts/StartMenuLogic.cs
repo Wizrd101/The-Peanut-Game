@@ -12,7 +12,11 @@ public class StartMenuLogic : MonoBehaviour
 
     public void ResetProgress()
     {
-
+        PlayerPrefs.SetInt("ColOneCollected", 0);
+        PlayerPrefs.SetInt("ColTwoCollected", 0);
+        PlayerPrefs.SetInt("ColThreeCollected", 0);
+        PlayerPrefs.SetInt("ColFourCollected", 0);
+        PlayerPrefs.SetInt("ColFiveCollected", 0);
     }
 
     public void Quit()
