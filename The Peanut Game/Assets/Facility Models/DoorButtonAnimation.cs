@@ -37,6 +37,7 @@ public class DoorButtonAnimation : MonoBehaviour
 
         if (doorstate == false) //&& openable)
         {
+            Debug.Log("1");
         Door.GetComponent<DoorAnimation>().Open();
             doorstate = true;
         }
