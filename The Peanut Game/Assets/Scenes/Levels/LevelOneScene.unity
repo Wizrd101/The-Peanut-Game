@@ -33387,6 +33387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1659975040}
   - component: {fileID: 1659975039}
+  - component: {fileID: 1659975041}
   m_Layer: 0
   m_Name: NextLevelTrigger
   m_TagString: Untagged
@@ -33430,6 +33431,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1659975041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659975038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7dab120b836cb64888166f67d821e49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &1661545744
 MeshCollider:
   m_ObjectHideFlags: 0
