@@ -2395,10 +2395,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74786748}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ce3f21bfca1ff7a40a74f400ba96b790, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ffe7777b2b21b2a4b8731db3bf0d65e2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2508,19 +2508,19 @@ AudioReverbZone:
   m_GameObject: {fileID: 74786748}
   m_Enabled: 1
   m_MinDistance: 1
-  m_MaxDistance: 10
-  m_ReverbPreset: 22
+  m_MaxDistance: 1000
+  m_ReverbPreset: 18
   m_Room: -1000
-  m_RoomHF: -1000
-  m_DecayTime: 2.81
-  m_DecayHFRatio: 0.14
-  m_Reflections: 429
-  m_ReflectionsDelay: 0.014
-  m_Reverb: 1023
-  m_ReverbDelay: 0.021
+  m_RoomHF: -2500
+  m_DecayTime: 1.49
+  m_DecayHFRatio: 0.21
+  m_Reflections: -2780
+  m_ReflectionsDelay: 0.3
+  m_Reverb: -1434
+  m_ReverbDelay: 0.1
   m_HFReference: 5000
-  m_Diffusion: 80
-  m_Density: 60
+  m_Diffusion: 27
+  m_Density: 100
   m_LFReference: 250
   m_RoomLF: 0
 --- !u!1 &80368102
@@ -32579,9 +32579,9 @@ MonoBehaviour:
   m_light: {fileID: 1741665398}
   rechargeTime: 0
   drainOverTime: 0
-  maxBrightness: 10000
-  minBrightness: 5000
-  drainRate: 1.5
+  maxBrightness: 2000
+  minBrightness: 500
+  drainRate: 4
 --- !u!114 &1741665397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32618,7 +32618,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 20
-  m_Range: 20
+  m_Range: 200
   m_SpotAngle: 60.265507
   m_InnerSpotAngle: 45.49288
   m_CookieSize: 10
