@@ -25,7 +25,6 @@ public class FireAlarmLights : MonoBehaviour
     void Update()
     {
         timer += Time.fixedDeltaTime;
-        Debug.Log(timer);
         if (timer >= timerEventTrigger)
         {
             if (light1.intensity == baseIntensity)
