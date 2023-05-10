@@ -10701,6 +10701,7 @@ GameObject:
   - component: {fileID: 349266071}
   - component: {fileID: 349266070}
   - component: {fileID: 349266069}
+  - component: {fileID: 349266076}
   m_Layer: 0
   m_Name: ExEnemy
   m_TagString: Enemy
@@ -10866,6 +10867,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &349266076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349266068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dd170ade03ab61468d62db04e0a270d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameData:
+    x: 0
+    y: 0
+    z: 0
+  useCharCont: 0
 --- !u!1 &356049815
 GameObject:
   m_ObjectHideFlags: 0
@@ -31395,6 +31413,10 @@ PrefabInstance:
     - target: {fileID: 1198864083242611237, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466021483934157446, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: useCharCont
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4135013735270702856, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_LocalScale.x
@@ -60727,7 +60749,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh81742
+  m_Name: pb_Mesh79284
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
