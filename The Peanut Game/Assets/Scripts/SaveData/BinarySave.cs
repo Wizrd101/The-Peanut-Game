@@ -11,19 +11,31 @@ public class BinarySave : MonoBehaviour
     // Calling the game data from the lower class
     public GameData gameData;
 
+    // IMPORTANT: saveFile is the name of the file, dataStream is the file itself
+
     // File to save data to
     string saveFile;
 
     // Opens the file and allows the reference
     FileStream dataStream;
 
-    // IMPORTANT: saveFile is the name of the file, dataStream is the file itself
-
     // Creates the BinaryFormatter
     BinaryFormatter converter = new BinaryFormatter();
 
     // Character Controller needs to be enabled and disabled
-    //CharacterController cc;
+    public bool useCharCont;
+    CharacterController cc;
+
+    void Awake()
+    {
+        saveFile = Application.persistentDataPath + "/" + gameObject.name + "gamedata.data";
+        //Debug.Log(saveFile);
+        gameData = new GameData();
+        if (useCharCont)
+        {
+            cc = GetComponent<CharacterController>();
+        }
+    }
 
     // Save-states style of saving
     private void Update()
@@ -31,9 +43,9 @@ public class BinarySave : MonoBehaviour
         // Save function. Make sure to set the variables before calling WriteFile.
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            /*gameData.x = transform.position.x;
+            gameData.x = transform.position.x;
             gameData.y = transform.position.y;
-            gameData.z = transform.position.z;*/
+            gameData.z = transform.position.z;
             WriteFile();
         }
 
@@ -41,19 +53,17 @@ public class BinarySave : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             ReadFile();
-            /*cc.enabled = false;
+            if (useCharCont)
+            {
+                cc.enabled = false;
+            }
             Vector3 pos = new Vector3(gameData.x, gameData.y, gameData.z);
             transform.position = pos;
-            cc.enabled = true;*/
+            if (useCharCont)
+            {
+                cc.enabled = true;
+            }
         }
-    }
-
-    void Awake()
-    {
-        saveFile = Application.persistentDataPath + "/" + gameObject.name + "gamedata.data";
-        //Debug.Log(saveFile);
-        gameData = new GameData();
-        //cc = GetComponent<CharacterController>();
     }
 
     // Creates and saves the file
@@ -94,15 +104,7 @@ public class BinarySave : MonoBehaviour
 public class GameData
 {
     // Can only save primitive variables (int, float, bool), because it isn't mono. Instead, save X, Y, and Z to build a Vector3 later.
-    /*public float x;
+    public float x;
     public float y;
-    public float z;*/
-
-    // This project will save the collectibles, like if the player has retrived them or not.
-    public int collectiblesRetrived;
-    public bool collectibleOneCollected;
-    public bool collectibleTwoCollected;        
-    public bool collectibleThreeCollected;
-    public bool collectibleFourCollected;
-    public bool collectibleFiveCollected;
+    public float z;
 }
