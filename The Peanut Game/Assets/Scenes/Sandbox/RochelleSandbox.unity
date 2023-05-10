@@ -32616,11 +32616,11 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 2000
-  m_Range: 200
-  m_SpotAngle: 42.76606
-  m_InnerSpotAngle: 36.01369
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 20
+  m_Range: 20
+  m_SpotAngle: 60.265507
+  m_InnerSpotAngle: 45.49288
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
