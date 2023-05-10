@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FlashLight : MonoBehaviour
 {
-    Light m_light;
+    public Light m_light;
     public bool rechargeTime;
     public bool drainOverTime;
     public float maxBrightness;
@@ -13,7 +13,6 @@ public class FlashLight : MonoBehaviour
 
     void Start()
     {
-        m_light = GetComponent<Light>();
         m_light.enabled = false;
         drainOverTime = false;
         rechargeTime = false;

@@ -13216,6 +13216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d9bde12c4b7c943be4be82c3671d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_light: {fileID: 421275572}
   rechargeTime: 0
   drainOverTime: 0
   maxBrightness: 10000
